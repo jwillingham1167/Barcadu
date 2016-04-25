@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.LoginActivity">
+
+    <include layout="@layout/top_bar"
+        android:id="@+id/include" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/passwordNotification"
+        android:layout_below="@+id/include"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:enabled="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:id="@+id/user_name_edit_text"
+        android:hint="@string/user_name_hint"
+        android:layout_marginTop="106dp"
+        android:layout_below="@+id/include"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:inputType="textPassword"
+        android:hint="@string/password_hint"
+        android:id="@+id/password_edit_text"
+        android:layout_below="@+id/user_name_edit_text"
+        android:layout_alignLeft="@+id/user_name_edit_text"
+        android:layout_alignStart="@+id/user_name_edit_text" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="@string/login_button_text"
+        android:background="@color/colorAccent"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/password_edit_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:clickable="true"
+        android:enabled="true"/>
+
+</RelativeLayout>

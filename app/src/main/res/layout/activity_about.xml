@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/top_bar"
+        android:id="@+id/include3" />
+
+    <ImageView
+        android:id="@+id/barcadu_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:src="@drawable/barcadulogo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:text="Barcadu is an inventory mangement platform designed in order to provide a convenient, mobile method of managing inventory.Barcadu can be used by anyone in their home or even a large corporation.\n\nDevelopers:\nJonathan Willingham\nNicholas Isola\nNicholas Logie"/>
+
+</LinearLayout>

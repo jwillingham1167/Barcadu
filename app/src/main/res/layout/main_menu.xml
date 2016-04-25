@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/top_bar"
+        android:id="@+id/include2" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="@string/inventory_info_button_text"
+        android:id="@+id/inventory_info_button"
+        android:layout_below="@+id/include2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:enabled="true"
+        android:clickable="true"
+        android:textSize="20sp"
+        android:background="@color/colorAccent"
+        android:textColor="#FFFFFF"
+        android:padding="15dp"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="@string/counts_button_text"
+        android:id="@+id/counts_button"
+        android:layout_below="@+id/inventory_info_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:enabled="true"
+        android:clickable="true"
+        android:textSize="20sp"
+        android:background="@color/colorAccent"
+        android:textColor="#FFFFFF"
+        android:padding="15dp"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="@string/transfers_button_text"
+        android:id="@+id/transfers_button"
+        android:layout_below="@+id/counts_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:enabled="true"
+        android:clickable="true"
+        android:textSize="20sp"
+        android:background="@color/colorAccent"
+        android:textColor="#FFFFFF"
+        android:padding="15dp"/>
+
+</RelativeLayout>

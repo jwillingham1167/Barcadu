@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/top_bar" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/count_page_enter_sku_text"
+        android:hint="Enter Item UPC"
+        android:textSize="20dp"
+        android:paddingTop="25dp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        style="@style/Button"
+        android:text="View Information"
+        android:padding="15dp"
+        android:id="@+id/count_page_upc_button"
+        android:layout_gravity="center_horizontal"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:paddingTop="55dp"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/count_page_item_name_result"
+                android:text="Placeholder Text"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="55dp"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vendor:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/count_page_item_vendor_result"
+                android:text="Placeholder Text"
+                android:textSize="20sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/count_page_update_quantity_text"
+        android:textSize="20sp"
+        android:paddingTop="100dp"
+        android:inputType="number"
+        android:hint="Enter quantity on hand"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        style="@style/Button"
+        android:text="Update item quantity"
+        android:padding="15dp"
+        android:id="@+id/count_page_update_quantity_button"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
